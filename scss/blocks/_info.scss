@@ -1,0 +1,142 @@
+.info {
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0;
+    align-items: center;
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title {
+      max-width: 445px;
+      color: $Dark-text;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.143px;
+      padding-bottom: 24px;
+      font-size: 48px;
+    }
+
+    &-text {
+      max-width: 445px;
+      color: #939CAA;
+      font-family: $font-deca;
+      font-size: 15px;
+      line-height: 25px;
+      padding-bottom: 40px;
+    }
+
+    &-btn {
+      @include main-btn();
+      width: 180px;
+    }
+
+    &-arrow {
+      position: absolute;
+      right: 0;
+      top: 100px;
+      z-index: 2;
+    }
+
+    &-web {
+      position: relative;
+      right: -260px;
+    }
+
+    &:nth-child(2) {
+
+      & div {
+        left: -210px;
+
+
+        & img {
+          top: 0;
+          left: 0;
+        }
+
+      }
+
+    }
+
+    &:nth-child(3) {
+      & div picture img {
+        top: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .info {
+    &__box {
+      padding: 60px 75px;
+      flex-direction: column-reverse;
+
+      &-card {
+        padding-top: 60px;
+        align-items: center;
+      }
+
+      &-title {
+        max-width: 575px;
+        text-align: center;
+      }
+
+      &-text {
+        max-width: 575px;
+        text-align: center;
+      }
+
+      &-web {
+        left: 100px;
+      }
+
+      &:nth-child(2) {
+        flex-direction: column;
+
+        & div {
+          left: -90px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .info {
+    &__box {
+      padding: 10px 10px;
+
+      &:nth-child(2) {
+        & div {
+          left: -60px;
+        }
+      }
+
+      &-card {
+        padding: 0;
+      }
+
+      &-title {
+        font-size: 32px;
+        padding: 0;
+      }
+
+      &-web {
+        transform: scale(0.7);
+        padding-bottom: 0;
+        left: 60px;
+        padding: 0;
+      }
+
+      &-arrow {
+        left: 100px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: $font-main;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #fff;
+}

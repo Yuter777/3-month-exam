@@ -1,0 +1,12 @@
+@mixin main-btn {
+  padding: 14px 39px;
+  background-color: $yellow;
+  color: #fff;
+  font-family: $font-main;
+  border: 2px solid $yellow;
+
+  &:hover {
+    background-color: transparent;
+    color: $yellow;
+  }
+}

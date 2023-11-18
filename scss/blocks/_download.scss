@@ -1,0 +1,81 @@
+.download-bg {
+  background-image: url(/img/Maskfooter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+.download {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    max-width: 415px;
+    letter-spacing: -2.143px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+
+    &-btn {
+      width: 159px;
+      height: 56px;
+      border-radius: 4px;
+      background: #E5ECF4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &-title {
+        padding-left: 5px;
+
+        & h3 {
+          color: $Dark-text;
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: -0.446px;
+        }
+
+        & p {
+          color: $Dark-text;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -0.893px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:968px) {
+  .download {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__link {
+      transform: scale(0.73);
+    }
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .download {
+
+    &__title {
+      font-size: 32px;
+    }
+  }
+}
